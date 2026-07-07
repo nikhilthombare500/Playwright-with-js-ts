@@ -1,0 +1,27 @@
+{
+  "name": "playwright-with-jsts",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "test": "cucumber-js test"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/nikhilthombare500/Playwright-with-js-ts.git"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "type": "commonjs",
+  "bugs": {
+    "url": "https://github.com/nikhilthombare500/Playwright-with-js-ts/issues"
+  },
+  "homepage": "https://github.com/nikhilthombare500/Playwright-with-js-ts#readme",
+  "devDependencies": {
+    "@cucumber/cucumber": "^13.0.0",
+    "@playwright/test": "^1.61.1",
+    "@types/node": "^26.1.0",
+    "ts-node": "^10.9.2"
+  }
+}
