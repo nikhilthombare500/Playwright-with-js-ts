@@ -1,15 +1,11 @@
-import{Given, When, Then} from "@cucumber/cucumber";
-import { chromium, Page, Browser, Expect, expect } from "@playwright/test";
-
-let browser: Browser;
+import{Given, When, Then, setDefaultTimeout} from "@cucumber/cucumber";
+import { chromium, Page, Browser, expect } from "@playwright/test";
+setDefaultTimeout(60 * 1000 * 2)
 let page: Page;
 
-browser = await chromium.launch({headless: false});
-page= await browser.newPage();
-
 Then('user add the {string} to the add to cart', async function (Product) {
-const productName = 'Product';
-const products = await page.locator(".card-body");
+const productName = Product;
+const products = await this.page.locator(".card-body");
 const count = await products.count();
    for (let i = 0; i < count; ++i) {
       if (await products.nth(i).locator("b").textContent() === productName) {
@@ -18,9 +14,10 @@ const count = await products.count();
          break;
       }
    }
+   await this.page.waitForTimeout(2000);
 });
 
 Then('the cart badge should get updated', async function () {
- const count = await page.locator("[routerlink*='cart']").textContent();
+ const count = await this.page.locator("[routerlink*='cart']").textContent();
  expect(Number(count?.length)).toBeGreaterThan(0);
 });
