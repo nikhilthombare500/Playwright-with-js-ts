@@ -4,118 +4,103 @@
     "elements": [
       {
         "description": "",
-        "id": "add-to-cart-tests;login-should-be-success",
+        "id": "add-to-cart-tests;add-to-cart-functionality",
         "keyword": "Scenario Outline",
         "line": 6,
-        "name": "Login should be success",
+        "name": "Add to cart functionality",
         "steps": [
+          {
+            "keyword": "Before",
+            "hidden": true,
+            "result": {
+              "status": "passed",
+              "duration": 783382300
+            }
+          },
           {
             "arguments": [],
             "keyword": "Given ",
             "line": 4,
             "name": "User navigates to the application",
             "match": {
-              "location": "src\\test\\steps\\loginSteps.ts:14"
+              "location": "src\\test\\steps\\loginSteps.ts:6"
             },
             "result": {
-              "status": "failed",
-              "duration": 1143000,
-              "error_message": "Error: function uses multiple asynchronous interfaces: callback and promise\nto use the callback interface: do not return a promise\nto use the promise interface: remove the last argument to the function\n    at Object.run (E:\\Playwright with jsts\\node_modules\\@cucumber\\cucumber\\src\\user_code_runner.ts:44:16)\n    at E:\\Playwright with jsts\\node_modules\\@cucumber\\cucumber\\src\\runtime\\step_runner.ts:52:24\n    at AsyncLocalStorage.run (node:internal/async_local_storage/async_context_frame:63:14)\n    at runInTestCaseScope (E:\\Playwright with jsts\\node_modules\\@cucumber\\cucumber\\src\\runtime\\scope\\test_case_scope.ts:15:24)\n    at Object.run (E:\\Playwright with jsts\\node_modules\\@cucumber\\cucumber\\src\\runtime\\step_runner.ts:51:44)\n    at async TestCaseRunner.invokeStep (E:\\Playwright with jsts\\node_modules\\@cucumber\\cucumber\\src\\runtime\\test_case_runner.ts:144:12)\n    at async TestCaseRunner.runStep (E:\\Playwright with jsts\\node_modules\\@cucumber\\cucumber\\src\\runtime\\test_case_runner.ts:357:20)\n    at async E:\\Playwright with jsts\\node_modules\\@cucumber\\cucumber\\src\\runtime\\test_case_runner.ts:248:34\n    at async TestCaseRunner.aroundTestStep (E:\\Playwright with jsts\\node_modules\\@cucumber\\cucumber\\src\\runtime\\test_case_runner.ts:179:28)\n    at async TestCaseRunner.runAttempt (E:\\Playwright with jsts\\node_modules\\@cucumber\\cucumber\\src\\runtime\\test_case_runner.ts:225:7)"
+              "status": "passed",
+              "duration": 8362284799
             }
           },
           {
             "arguments": [],
             "keyword": "And ",
             "line": 7,
-            "name": "User click on the login link",
+            "name": "User enter the username as \"anshika@gmail.com\"",
+            "match": {
+              "location": "src\\test\\steps\\loginSteps.ts:10"
+            },
             "result": {
-              "status": "undefined",
-              "duration": 0
+              "status": "passed",
+              "duration": 118749700
             }
           },
           {
             "arguments": [],
             "keyword": "And ",
             "line": 8,
-            "name": "User enter the username as \"nikhilthombare\"",
+            "name": "User enter the password as \"Iamking@000\"",
             "match": {
-              "location": "src\\test\\steps\\loginSteps.ts:20"
+              "location": "src\\test\\steps\\loginSteps.ts:14"
             },
             "result": {
-              "status": "skipped",
-              "duration": 0
-            }
-          },
-          {
-            "arguments": [],
-            "keyword": "And ",
-            "line": 9,
-            "name": "User enter the password as \"Nikhil@123\"",
-            "match": {
-              "location": "src\\test\\steps\\loginSteps.ts:24"
-            },
-            "result": {
-              "status": "skipped",
-              "duration": 0
+              "status": "passed",
+              "duration": 69972399
             }
           },
           {
             "arguments": [],
             "keyword": "When ",
-            "line": 10,
+            "line": 9,
             "name": "User click on the login button",
             "match": {
-              "location": "src\\test\\steps\\loginSteps.ts:28"
+              "location": "src\\test\\steps\\loginSteps.ts:18"
             },
             "result": {
-              "status": "skipped",
-              "duration": 0
+              "status": "passed",
+              "duration": 2121688399
             }
           },
           {
             "arguments": [],
-            "keyword": "Then ",
+            "keyword": "And ",
             "line": 11,
-            "name": "Login should be success",
+            "name": "user add the \"<Product>\" to the add to cart",
             "match": {
-              "location": "src\\test\\steps\\loginSteps.ts:33"
+              "location": "src\\test\\steps\\addToCart.ts:7"
             },
             "result": {
-              "status": "skipped",
-              "duration": 0
+              "status": "passed",
+              "duration": 2077146500
             }
           },
           {
             "arguments": [],
             "keyword": "And ",
-            "line": 13,
-            "name": "user search for \"<book>\"",
-            "result": {
-              "status": "undefined",
-              "duration": 0
-            }
-          },
-          {
-            "arguments": [],
-            "keyword": "And ",
-            "line": 14,
-            "name": "user add the book to the cart",
-            "result": {
-              "status": "undefined",
-              "duration": 0
-            }
-          },
-          {
-            "arguments": [],
-            "keyword": "And ",
-            "line": 15,
+            "line": 12,
             "name": "the cart badge should get updated",
             "match": {
-              "location": "src\\test\\steps\\addToCart.ts:20"
+              "location": "src\\test\\steps\\addToCart.ts:21"
             },
             "result": {
-              "status": "skipped",
-              "duration": 0
+              "status": "passed",
+              "duration": 52130199
+            }
+          },
+          {
+            "keyword": "After",
+            "hidden": true,
+            "result": {
+              "status": "passed",
+              "duration": 70791900
             }
           }
         ],
@@ -123,12 +108,29 @@
         "type": "scenario"
       },
       {
-        "description": "|book|\n| simple |\n| Wild |",
+        "description": "|Product|\n| ADIDAS ORIGINAL |\n| iPhone QA Max |",
         "id": "add-to-cart-tests;",
         "keyword": "Example",
-        "line": 17,
+        "line": 14,
         "name": "",
-        "steps": [],
+        "steps": [
+          {
+            "keyword": "Before",
+            "hidden": true,
+            "result": {
+              "status": "passed",
+              "duration": 805470299
+            }
+          },
+          {
+            "keyword": "Before",
+            "hidden": true,
+            "result": {
+              "status": "passed",
+              "duration": 111993000
+            }
+          }
+        ],
         "tags": [],
         "type": "scenario"
       }
@@ -151,17 +153,24 @@
         "name": "Login should be success",
         "steps": [
           {
+            "keyword": "Before",
+            "hidden": true,
+            "result": {
+              "status": "passed",
+              "duration": 266524499
+            }
+          },
+          {
             "arguments": [],
             "keyword": "Given ",
             "line": 4,
             "name": "User navigates to the application",
             "match": {
-              "location": "src\\test\\steps\\loginSteps.ts:14"
+              "location": "src\\test\\steps\\loginSteps.ts:6"
             },
             "result": {
-              "status": "failed",
-              "duration": 530199,
-              "error_message": "Error: function uses multiple asynchronous interfaces: callback and promise\nto use the callback interface: do not return a promise\nto use the promise interface: remove the last argument to the function\n    at Object.run (E:\\Playwright with jsts\\node_modules\\@cucumber\\cucumber\\src\\user_code_runner.ts:44:16)\n    at E:\\Playwright with jsts\\node_modules\\@cucumber\\cucumber\\src\\runtime\\step_runner.ts:52:24\n    at AsyncLocalStorage.run (node:internal/async_local_storage/async_context_frame:63:14)\n    at runInTestCaseScope (E:\\Playwright with jsts\\node_modules\\@cucumber\\cucumber\\src\\runtime\\scope\\test_case_scope.ts:15:24)\n    at Object.run (E:\\Playwright with jsts\\node_modules\\@cucumber\\cucumber\\src\\runtime\\step_runner.ts:51:44)\n    at async TestCaseRunner.invokeStep (E:\\Playwright with jsts\\node_modules\\@cucumber\\cucumber\\src\\runtime\\test_case_runner.ts:144:12)\n    at async TestCaseRunner.runStep (E:\\Playwright with jsts\\node_modules\\@cucumber\\cucumber\\src\\runtime\\test_case_runner.ts:357:20)\n    at async E:\\Playwright with jsts\\node_modules\\@cucumber\\cucumber\\src\\runtime\\test_case_runner.ts:248:34\n    at async TestCaseRunner.aroundTestStep (E:\\Playwright with jsts\\node_modules\\@cucumber\\cucumber\\src\\runtime\\test_case_runner.ts:179:28)\n    at async TestCaseRunner.runAttempt (E:\\Playwright with jsts\\node_modules\\@cucumber\\cucumber\\src\\runtime\\test_case_runner.ts:225:7)"
+              "status": "passed",
+              "duration": 3437005400
             }
           },
           {
@@ -170,11 +179,11 @@
             "line": 7,
             "name": "User enter the username as \"anshika@gmail.com\"",
             "match": {
-              "location": "src\\test\\steps\\loginSteps.ts:20"
+              "location": "src\\test\\steps\\loginSteps.ts:10"
             },
             "result": {
-              "status": "skipped",
-              "duration": 0
+              "status": "passed",
+              "duration": 128261599
             }
           },
           {
@@ -183,11 +192,11 @@
             "line": 8,
             "name": "User enter the password as \"Iamking@000\"",
             "match": {
-              "location": "src\\test\\steps\\loginSteps.ts:24"
+              "location": "src\\test\\steps\\loginSteps.ts:14"
             },
             "result": {
-              "status": "skipped",
-              "duration": 0
+              "status": "passed",
+              "duration": 44734099
             }
           },
           {
@@ -196,11 +205,11 @@
             "line": 9,
             "name": "User click on the login button",
             "match": {
-              "location": "src\\test\\steps\\loginSteps.ts:28"
+              "location": "src\\test\\steps\\loginSteps.ts:18"
             },
             "result": {
-              "status": "skipped",
-              "duration": 0
+              "status": "passed",
+              "duration": 2156657900
             }
           },
           {
@@ -209,11 +218,19 @@
             "line": 10,
             "name": "Login should be success",
             "match": {
-              "location": "src\\test\\steps\\loginSteps.ts:33"
+              "location": "src\\test\\steps\\loginSteps.ts:23"
             },
             "result": {
-              "status": "skipped",
-              "duration": 0
+              "status": "passed",
+              "duration": 431921499
+            }
+          },
+          {
+            "keyword": "After",
+            "hidden": true,
+            "result": {
+              "status": "passed",
+              "duration": 114867599
             }
           }
         ],
@@ -228,17 +245,24 @@
         "name": "Login should not be success",
         "steps": [
           {
+            "keyword": "Before",
+            "hidden": true,
+            "result": {
+              "status": "passed",
+              "duration": 485545099
+            }
+          },
+          {
             "arguments": [],
             "keyword": "Given ",
             "line": 4,
             "name": "User navigates to the application",
             "match": {
-              "location": "src\\test\\steps\\loginSteps.ts:14"
+              "location": "src\\test\\steps\\loginSteps.ts:6"
             },
             "result": {
-              "status": "failed",
-              "duration": 1249399,
-              "error_message": "Error: function uses multiple asynchronous interfaces: callback and promise\nto use the callback interface: do not return a promise\nto use the promise interface: remove the last argument to the function\n    at Object.run (E:\\Playwright with jsts\\node_modules\\@cucumber\\cucumber\\src\\user_code_runner.ts:44:16)\n    at E:\\Playwright with jsts\\node_modules\\@cucumber\\cucumber\\src\\runtime\\step_runner.ts:52:24\n    at AsyncLocalStorage.run (node:internal/async_local_storage/async_context_frame:63:14)\n    at runInTestCaseScope (E:\\Playwright with jsts\\node_modules\\@cucumber\\cucumber\\src\\runtime\\scope\\test_case_scope.ts:15:24)\n    at Object.run (E:\\Playwright with jsts\\node_modules\\@cucumber\\cucumber\\src\\runtime\\step_runner.ts:51:44)\n    at async TestCaseRunner.invokeStep (E:\\Playwright with jsts\\node_modules\\@cucumber\\cucumber\\src\\runtime\\test_case_runner.ts:144:12)\n    at async TestCaseRunner.runStep (E:\\Playwright with jsts\\node_modules\\@cucumber\\cucumber\\src\\runtime\\test_case_runner.ts:357:20)\n    at async E:\\Playwright with jsts\\node_modules\\@cucumber\\cucumber\\src\\runtime\\test_case_runner.ts:248:34\n    at async TestCaseRunner.aroundTestStep (E:\\Playwright with jsts\\node_modules\\@cucumber\\cucumber\\src\\runtime\\test_case_runner.ts:179:28)\n    at async TestCaseRunner.runAttempt (E:\\Playwright with jsts\\node_modules\\@cucumber\\cucumber\\src\\runtime\\test_case_runner.ts:225:7)"
+              "status": "passed",
+              "duration": 2563938900
             }
           },
           {
@@ -247,11 +271,11 @@
             "line": 13,
             "name": "User enter the username as \"anshiksassa@gmail.com\"",
             "match": {
-              "location": "src\\test\\steps\\loginSteps.ts:20"
+              "location": "src\\test\\steps\\loginSteps.ts:10"
             },
             "result": {
-              "status": "skipped",
-              "duration": 0
+              "status": "passed",
+              "duration": 98237499
             }
           },
           {
@@ -260,11 +284,11 @@
             "line": 14,
             "name": "User enter the password as \"Iamking@000\"",
             "match": {
-              "location": "src\\test\\steps\\loginSteps.ts:24"
+              "location": "src\\test\\steps\\loginSteps.ts:14"
             },
             "result": {
-              "status": "skipped",
-              "duration": 0
+              "status": "passed",
+              "duration": 27104600
             }
           },
           {
@@ -273,11 +297,11 @@
             "line": 15,
             "name": "User click on the login button",
             "match": {
-              "location": "src\\test\\steps\\loginSteps.ts:28"
+              "location": "src\\test\\steps\\loginSteps.ts:18"
             },
             "result": {
-              "status": "skipped",
-              "duration": 0
+              "status": "passed",
+              "duration": 2086475000
             }
           },
           {
@@ -286,11 +310,19 @@
             "line": 16,
             "name": "Login should fail",
             "match": {
-              "location": "src\\test\\steps\\loginSteps.ts:41"
+              "location": "src\\test\\steps\\loginSteps.ts:30"
             },
             "result": {
-              "status": "skipped",
-              "duration": 0
+              "status": "passed",
+              "duration": 2052879699
+            }
+          },
+          {
+            "keyword": "After",
+            "hidden": true,
+            "result": {
+              "status": "passed",
+              "duration": 90335299
             }
           }
         ],

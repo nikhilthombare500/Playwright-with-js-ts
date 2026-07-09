@@ -6,3 +6,8 @@ node_modules/
 /blob-report/
 /playwright/.cache/
 /playwright/.auth/
+features
+assets
+cucumber-report.html
+@rerun.txt
+index.html
