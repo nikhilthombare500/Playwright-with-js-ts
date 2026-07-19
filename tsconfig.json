@@ -1,9 +1,0 @@
-{
-
-    "compailerOptions": {
-       "typeRoots": [
-          "./node_modules/@types",
-          "src/helper/types"
-       ],
-    },
-}
